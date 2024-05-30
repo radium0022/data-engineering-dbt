@@ -1,4 +1,9 @@
-{{ config(materialized="view") }}
+{
+    {config(
+    materialized="view",
+    tags=["green-taxi"]
+    )}
+}
 
 with tripdata as 
 (
